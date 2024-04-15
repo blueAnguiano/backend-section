@@ -7,7 +7,7 @@ class BaseRepository {
         return await this.model.findById(id);
     }
 
-    async getAll(id) {
+    async getAll() {
         return await this.model.find();
     }
 
@@ -20,7 +20,8 @@ class BaseRepository {
     }
 
     async delete(id) {
-        return this.model.findByIdAndDelete(id);
+        this.model.findByIdAndDelete(id);
+        return true;
     }
 }
 
