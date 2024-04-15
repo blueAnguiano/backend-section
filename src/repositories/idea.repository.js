@@ -1,14 +1,14 @@
 const BaseRepository = require('./base.repository');
 
-let _Idea = null;
+let _idea = null;
 class IdeaRepository extends BaseRepository{
     constructor({Idea}) {
         super(Idea);
-        _Idea = Idea;
+        _idea = Idea;
     }
 
     async getUserIdea(author) {
-        return await _Idea.find({author});
+        return await _idea.find({author});
     }
 }
 

@@ -1,11 +1,11 @@
 const BaseRepository = require('./base.repository');
 
-let _Comment = null;
+let _comment = null;
 class CommentRepository extends BaseRepository{
     constructor({Comment}) {
         super(Comment);
 
-        _Comment = Comment;
+        _comment = Comment;
     }
 }
 
