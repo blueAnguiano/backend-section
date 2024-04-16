@@ -50,18 +50,6 @@ class IdeaController {
         return res.send(ideaVoted);
     }
 
-    /*async updVote(req, res) {
-        const {idIdea} = req.params;
-        const ideaVoted = await _ideaService.upVoteIdea(idIdea);
-        return res.send(ideaVoted);
-    }
-
-    async downVote(req, res) {
-        const {idIdea} = req.params;
-        const ideaVoted = await _ideaService.downVoteIdea(idIdea);
-        return res.send(ideaVoted);
-    }*/
-
     //deletes
     async delete(req, res) {
         const {idIdea} = req.params;
