@@ -4,7 +4,7 @@ const {MONGO_URI} = container.resolve('config');
 
 const mongoose = require('mongoose');
 
-mongoose.connect(MONGO_URI)
+mongoose.connect(MONGO_URI, {})
     .then(() =>
         server.start()
     )

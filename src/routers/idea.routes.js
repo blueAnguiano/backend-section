@@ -9,11 +9,12 @@ module.exports = function ({IdeaController}) {
     router.get('/:idAuthor', IdeaController.getIdeasByAuthor)
 
     //posts
-    router.post('/', IdeaController.create);
+    router.post('', IdeaController.create);
+    router.post('/:idIdea/:isUpVote', IdeaController.voteIdea);
 
     //putters
     router.put('/:idIdea', IdeaController.update);
-    router.put('/:idIdea/:isUpVote', IdeaController.voteIdea);
+
 
     //deletes
     router.delete('/:idIdea', IdeaController.delete);

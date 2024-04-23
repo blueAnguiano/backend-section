@@ -28,17 +28,18 @@ const {
     IdeaRoutes,
     CommentRoutes,
 } = require('../routers/index.routes');
-const routers = require('../routers')
+
+const routers = require('../routers');
 
 //Models
-const {Comment, Idea, User} = require('../models')
+const {  Comment, Idea, User} = require("../models");
 
 //Repositories
 const {
     UserRepository,
     IdeaRepository,
     CommentRepository
-} = require('../repositories')
+} = require('../repositories');
 
 const container = createContainer();
 

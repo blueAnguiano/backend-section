@@ -9,6 +9,7 @@ class CommentService extends Base {
         _ideaRepository = IdeaRepository;
     }
 
+    //differences
     async getCommentsIdea(idIdea){
         const idea = await _ideaRepository._validateIdea(idIdea);
 

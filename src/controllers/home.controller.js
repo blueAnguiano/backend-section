@@ -1,7 +1,6 @@
 let _homeService = null;
 // you will indicate as a private variable with underscore _variableName
 
-
 class HomeController {
     constructor({HomeService}) {
         _homeService = HomeService;

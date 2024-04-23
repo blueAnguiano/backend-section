@@ -20,10 +20,10 @@ module.exports = function ({HomeRoutes, UserRoutes, IdeaRoutes, CommentRoutes}) 
         .use(compression());
 
     //Setting up the routers
-    apiRoutes.use('/home', HomeRoutes);
-    apiRoutes.use('/user', UserRoutes);
-    apiRoutes.use('/idea', IdeaRoutes);
-    apiRoutes.use('/comment', CommentRoutes);
+    apiRoutes.use("/home", HomeRoutes);
+    apiRoutes.use("/user", UserRoutes);
+    apiRoutes.use("/idea", IdeaRoutes);
+    apiRoutes.use("/comment", CommentRoutes);
 
     router.use('/v1/api', apiRoutes);
 

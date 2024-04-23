@@ -12,17 +12,17 @@ class BaseRepository {
     }
 
     async create(entity) {
-        return this.model.create(entity);
+        return await this.model.create(entity);
     }
 
     async update(id, entity) {
-        return this.model.findByIdAndUpdate(id, entity, {new: true});
+        return await this.model.findByIdAndUpdate(id, entity, { new: true });
     }
 
     async delete(id) {
-        this.model.findByIdAndDelete(id);
+        await this.model.findByIdAndDelete(id);
         return true;
     }
 }
 
-module.exports =  BaseRepository;
+module.exports = BaseRepository;

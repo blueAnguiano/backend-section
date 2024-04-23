@@ -25,6 +25,7 @@ class CommentController {
     }
 
     //posts
+    //differences
     async makeAComment(req, res) {
         const {body} = req.body;
         const {idIdea} = req.params;

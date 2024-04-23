@@ -9,7 +9,7 @@ module.exports = function ({CommentController}) {
     router.get('/:idIdea', CommentController.getCommentsIdea);
 
     //posts
-    router.post('/make', CommentController.makeAComment);
+    router.post('/make/:idIdea', CommentController.makeAComment);
 
     //putters
     router.put('', CommentController.update);

@@ -1,6 +1,6 @@
 class BaseService{
-    constructor(Repository) {
-        this.repository = Repository;
+    constructor(repository) {
+        this.repository = repository;
     }
 
     async get(id) {
