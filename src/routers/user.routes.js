@@ -1,12 +1,12 @@
 const {Router} = require('express');
 
-const {AuthMiddleware} = require('../middlewares');
+const {AuthMiddleware, ParseIntMiddleware} = require('../middlewares');
 
 module.exports = function ({UserController}) {
     const router = new Router();
 
     //getters
-    router.get('', [AuthMiddleware], UserController.getAll);
+    router.get('', [AuthMiddleware, ParseIntMiddleware], UserController.getAll);
     router.get('/:idUser', UserController.get);
 
     //posts
